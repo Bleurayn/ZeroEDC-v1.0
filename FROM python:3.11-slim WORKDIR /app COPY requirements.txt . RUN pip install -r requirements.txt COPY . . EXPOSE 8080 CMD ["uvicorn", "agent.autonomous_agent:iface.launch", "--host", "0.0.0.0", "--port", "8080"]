@@ -1,0 +1,31 @@
+from core.digital_twin import build_twin
+from ledger.provenance_ledger import certify
+from snapshot.snapshot_generator import generate_define_xml
+import pandas as pd
+from datetime import datetime, timedelta
+
+print("=== ZeroEDC v1.1 Demo Pipeline ===\n")
+
+# 1. Simulate ingested data
+df = pd.DataFrame({
+    'Patient_ID': ['P001'] * 5,
+    'Date': [datetime(2025,1,1) + timedelta(days=i*28) for i in range(5)],
+    'HbA1c': [7.8, 7.5, 7.2, 6.9, 6.7]
+})
+print("Ingested sample patient data\n")
+
+# 2. Build digital twin
+twin = build_twin(df, 'P001')
+print(f"Digital twin built – 90-day predictions: {twin['predictions']}, confidence: {twin['confidence']}\n")
+
+# 3. Certify on ledger
+hash_record, conf = certify(6.5, "P001", "HbA1c", "sha256:test123", twin['confidence'])
+print(f"Provenance ledger entry – final confidence: {conf:.4f}, hash: {hash_record[:64]}...\n")
+
+# 4. Generate submission snapshot
+xml = generate_define_xml(df)
+print("DefineXML snapshot generated (preview):")
+print(xml[:200] + "...\n")
+
+print("Pipeline complete – regulator-ready package in simulated <45 min.")
+print("ZeroEDC: No manual queries. Ever.")
