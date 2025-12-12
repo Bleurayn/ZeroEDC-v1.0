@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+gradio
+pydicom
+xmltodict
+great-expectations
+fastapi
+uvicorn
