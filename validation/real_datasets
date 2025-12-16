@@ -1,0 +1,9 @@
+NSCLC-Radiomics clinical data:
+https://wiki.cancerimagingarchive.net/download/attachments/3539049/NSCLC-Radiomics-clinical.csv?api=v2
+(422 patients — exact match)
+LIDC-IDRI metadata:
+https://wiki.cancerimagingarchive.net/download/attachments/3538948/LIDC-IDRI-metadata.csv?api=v2
+(1,018 patients)
+RTOG-0617 clinical (public subset): Use placeholder or small anonymized — or search TCIA for "RTOG" subset.
+TCGA-BRCA clinical:
+https://portal.gdc.cancer.gov/files (download small clinical.tsv via cart)
