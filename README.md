@@ -17,4 +17,6 @@ All passed Pinnacle21 validation clean.
 
 Run demo: `python demo/run_all.py`
 
+**One-Command Full Stack**
+
 — Bleurayn, December 2025
