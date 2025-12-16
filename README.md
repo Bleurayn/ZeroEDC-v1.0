@@ -1,3 +1,5 @@
+**Official Archive v1.1 (demo-enhanced)**: https://doi.org/10.5281/zenodo.17952273
+
 # ZeroEDC v1.1
 **The world’s first autonomous, continuously-submittable clinical data platform**
 
