@@ -26,4 +26,13 @@ git clone https://github.com/Bleurayn/ZeroEDC-v1.0
 cd ZeroEDC-v1.0
 docker compose up
 
+
+4. **Save the file**.
+
+5. **Commit and push** (terminal commands):
+```bash
+git add README.md
+git commit -m "Update README with full Docker Compose quick start and Prometheus monitoring sections"
+git push
+
 — Bleurayn, December 2025
