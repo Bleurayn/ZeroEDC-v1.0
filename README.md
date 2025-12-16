@@ -17,6 +17,13 @@ All passed Pinnacle21 validation clean.
 
 Run demo: `python demo/run_all.py`
 
-**One-Command Full Stack**
+## Quick Start – Full Stack in 30 Seconds
+
+ZeroEDC is fully Dockerized for instant deployment and monitoring.
+
+```bash
+git clone https://github.com/Bleurayn/ZeroEDC-v1.0
+cd ZeroEDC-v1.0
+docker compose up
 
 — Bleurayn, December 2025
