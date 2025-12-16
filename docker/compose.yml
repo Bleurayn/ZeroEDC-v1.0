@@ -1,13 +1,20 @@
-version: "3.9"
+version: '3.9'
 services:
-  zeroedc:
+  zeroedc-api:
     build: .
     ports:
-      - "8080:8080"
+      - "8000:8000"
+    command: uvicorn agent.autonomous_agent:iface.launch --host 0.0.0.0 --port 8000
+
+  gradio-ui:
+    build: .
+    ports:
       - "7860:7860"
+    command: python -m gradio agent/autonomous_agent.py  # adjust if needed
+
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
     volumes:
-      - .:/app
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 10s
-      retries: 3
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
