@@ -1,4 +1,4 @@
-**Official Archive v1.1 (demo-enhanced)**: https://doi.org/10.5281/zenodo.17952273
+**Official Archive v1.2 (demo-enhanced)**: (https://doi.org/10.5281/zenodo.18077270)
 
 # ZeroEDC v1.2
 **The world’s first autonomous, continuously-submittable clinical data platform**
@@ -26,8 +26,8 @@ Run demo: `python demo/run_all.py`
 
 Immutable proof:  
 GitHub: https://github.com/Bleurayn/ZeroEDC-v1.0  
-Software Heritage Archive: swh:1:dir:[INSERT NEW SWHID HERE]  
-(https://archive.softwareheritage.org/browse/directory/[NEW HASH HERE]/)
+Software Heritage Archive: swh:1:dir:swh:1:dir:21039d8a4d3e223c9fa6da03b3e82fce7530218e  
+(https://archive.softwareheritage.org/browse/directory/swh:1:dir:21039d8a4d3e223c9fa6da03b3e82fce7530218e)
 
 — Bleurayn, December 2025
 ```bash
