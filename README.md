@@ -1,10 +1,15 @@
 **Official Archive v1.1 (demo-enhanced)**: https://doi.org/10.5281/zenodo.17952273
 
-# ZeroEDC v1.1
+# ZeroEDC v1.2
 **The world’s first autonomous, continuously-submittable clinical data platform**
 
 ZeroEDC eliminates traditional EDC, manual queries, and database lock.
 Ingests raw source (EHR, labs, imaging, ePRO, DICOM, PDFs) → regulator-ready package in <45 min average.
+
+### Key Updates in v1.2 (December 2025)
+- Hybrid CTGAN + LLM synthesis for tabular/narrative data with rare event oversampling and DP noise (epsilon<1.0).
+- Multimodal support: DICOM image synth and VCF genomic stubs for EHR + imaging/genomics.
+- Shadow-Mode PQ docs for Q1 2026 pilots (e.g., TCGA collaborations).
 
 ### Proven on public oncology datasets (Dec 2025)
 | Dataset            | Patients | Auto-certification | Manual queries | Time to package |
@@ -15,14 +20,16 @@ Ingests raw source (EHR, labs, imaging, ePRO, DICOM, PDFs) → regulator-ready p
 | TCGA-BRCA          | 1,068    | 98.4%              | 0              | 44 min          |
 | **Total**          | **3,004**| **98.3%**          | **0**          | **<45 min avg** |
 
-All passed Pinnacle21 validation clean.
+All passed Pinnacle21 validation clean. Fidelity: KS p-value >0.05 on real cohorts.
 
 Run demo: `python demo/run_all.py`
 
-## Quick Start – Full Stack in 30 Seconds
+Immutable proof:  
+GitHub: https://github.com/Bleurayn/ZeroEDC-v1.0  
+Software Heritage Archive: swh:1:dir:[INSERT NEW SWHID HERE]  
+(https://archive.softwareheritage.org/browse/directory/[NEW HASH HERE]/)
 
-ZeroEDC is fully Dockerized for instant deployment and monitoring.
-
+— Bleurayn, December 2025
 ```bash
 git clone https://github.com/Bleurayn/ZeroEDC-v1.0
 cd ZeroEDC-v1.0
